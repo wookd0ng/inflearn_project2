@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SNS 회원가입</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        form {
+            display: inline-block;
+            text-align: left;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        label, input, select {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="submit"] {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>SNS 회원가입</h1>
+    <form action="회원가입 처리하는 서버 주소" method="post">
+        <label for="email">이메일:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">비밀번호:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="name">이름:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="birthdate">생년월일:</label>
+        <input type="date" id="birthdate" name="birthdate" required>
+
+        <label>성별:</label>
+        <input type="radio" id="gender-male" name="gender" value="male" required>
+        <label for="gender-male">남성</label>
+        <input type="radio" id="gender-female" name="gender" value="female" required>
+        <label for="gender-female">여성</label>
+
+        <input type="checkbox" id="agreement" name="agreement" required>
+        <label for="agreement">이용약관에 동의합니다.</label>
+
+        <input type="submit" value="회원가입">
+    </form>
+</body>
+
+</html>
