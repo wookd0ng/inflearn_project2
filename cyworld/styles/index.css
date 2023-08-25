@@ -30,7 +30,7 @@
 
 .wrapper__left__header{
     width: 100%;
-    height: 30%;
+    height: 10%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -68,9 +68,12 @@
 
 }
 .left__body__profile{
-      width: 148px;
-    height: 133px;
-    background-color: gray;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    /* 기본값을 확실하게 똑같이 표시 */
 }
 .left_body_line{
      border-top:1px dotted black;
@@ -78,13 +81,43 @@
 }
 
 .left__body__footer{
-      width: 148px;
-    height: 60px;
-    background-color: red;
+    width: 100%;
+
 }
 
+.wrapper__feel{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.feel__title{
+    color:grey;
+    font-size: 11px;
+    margin-bottom: 5px;
+}
 .wrapper__right{
     width: 524px;
     height: 472px;
-    background-color: violet;
+    
+}
+.wrapper__right__header{
+    width: 510px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0px 14px;
+}
+
+.right__header__title, right__header__setting{
+    color:#55b2e4;
+    font-size: 9px;
+}
+
+.wrapper__right__body{
+    width: 510px;
+    height: 445px;
+    border: 1px solid gray;
 }
